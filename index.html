@@ -44,7 +44,7 @@
                     <a class="nav-link hover-line" href="signup.html">Sign Up</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#myModal" class="nav-link hover-line" data-toggle="modal">Login</a>
+                    <a href="myModal" class="nav-link hover-line" data-toggle="modal">Login</a>
                 </li>
             </ul>
         </div>
@@ -54,44 +54,40 @@
 <!-- model of login start from here  -->
 <!-- Modal HTML -->
 <div id="myModal" class="modal fade" style="width: 100vw;">
-    <div id="myModal" class="modal fade" style="width : 100%;">
-
-        <div class="modal-dialog modal-login">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <div class="avatar">
-                        <img src="" alt="Avatar">
+    <div class="modal-dialog modal-login">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="avatar">
+                    <img src="" alt="Avatar">
+                </div>
+                <h3 class="modal-title">Member Login</h3>
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form action="/examples/actions/confirmation.php" method="post">
+                    <div class="form-group mb-3">
+                        <label class="label" for="name">Username</label>
+                        <input type="text" class="form-control" placeholder="Username" required="">
                     </div>
-                    <h3 class="modal-title">Member Login</h3>
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                </div>
-                <div class="modal-body">
-                    <form action="/examples/actions/confirmation.php" method="post">
-                        <div class="form-group mb-3">
-                            <label class="label" for="name">Username</label>
-                            <input type="text" class="form-control" placeholder="Username" required="">
+                    <div class="form-group mb-3">
+                        <label class="label" for="password">Password</label>
+                        <input type="password" class="form-control" placeholder="Password" required="">
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="form-control btn btn-primary rounded submit px-3">LogIn</button>
+                    </div>
+                    <div class="form-group d-md-flex">
+                        <div class="w-50 text-left">
+                            <label class="checkbox-wrap checkbox-primary mb-0">Remember Me
+                                <input type="checkbox" checked="">
+                                <span class="checkmark"></span>
+                            </label>
                         </div>
-                        <div class="form-group mb-3">
-                            <label class="label" for="password">Password</label>
-                            <input type="password" class="form-control" placeholder="Password" required="">
+                        <div class="w-50 text-md-right">
+                            <a href="#">Forgot Password</a>
                         </div>
-                        <div class="form-group">
-                            <button type="submit"
-                                class="form-control btn btn-primary rounded submit px-3">LogIn</button>
-                        </div>
-                        <div class="form-group d-md-flex">
-                            <div class="w-50 text-left">
-                                <label class="checkbox-wrap checkbox-primary mb-0">Remember Me
-                                    <input type="checkbox" checked="">
-                                    <span class="checkmark"></span>
-                                </label>
-                            </div>
-                            <div class="w-50 text-md-right">
-                                <a href="#">Forgot Password</a>
-                            </div>
-                        </div>
-                    </form>
-                </div>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
@@ -119,8 +115,7 @@
     <div class="row align-items-center g-lg-5 py-5">
         <div class="col-lg-7 text-center text-lg-start">
             <h1 class="display-4 fw-bold lh-1 mb-3">Welcome to the Attendence System</h1>
-            <p class="col-lg-10 fs-4">Here you can easily take the attendance of your students. And in this database
-                you
+            <p class="col-lg-10 fs-4">Here you can easily take the attendance of your students. And in this database you
                 can
                 easily see the attendance of the students.</p>
         </div>
@@ -146,7 +141,7 @@
             </p>
         </div>
         <div class="col-md-10 mx-auto col-lg-5">
-            <img src="team image.png" alt="" style="width: 100%">
+            <img src="team image.png" alt="" style="width: 28rem;">
         </div>
     </div>
 </div>
@@ -168,8 +163,7 @@
     <div class="row featurette d-flex align-items-center" style="margin-top: 3rem;">
         <div class="col-md-7">
             <h2 class="featurette-heading fw-normal lh-1">Shivam</h2>
-            <p class="lead">So Shivam is working to make the website responsive so that this website can run in any
-                type
+            <p class="lead">So Shivam is working to make the website responsive so that this website can run in any type
                 of device like (Mobiles , big mobiles , landscape mode , potrait mode , etc).
             </p>
         </div>
@@ -229,8 +223,7 @@
         <div class="col-md-7 order-md-2">
             <h2 class="featurette-heading fw-normal lh-1">Oh yeah, it’s that good. <span class="text-muted">See for
                     yourself.</span></h2>
-            <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how
-                this
+            <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this
                 layout would work with some actual real-world content in place.</p>
         </div>
         <div class="col-md-5 order-md-1">
@@ -251,12 +244,10 @@
     <!-- right image container here start  -->
     <div class="row featurette d-flex align-items-center">
         <div class="col-md-7">
-            <h2 class="featurette-heading fw-normal lh-1">First featurette heading. <span class="text-muted">It’ll
-                    blow
+            <h2 class="featurette-heading fw-normal lh-1">First featurette heading. <span class="text-muted">It’ll blow
                     your
                     mind.</span></h2>
-            <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting
-                prose
+            <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting prose
                 here.
             </p>
         </div>
@@ -276,8 +267,7 @@
         <div class="col-md-7 order-md-2">
             <h2 class="featurette-heading fw-normal lh-1">Oh yeah, it’s that good. <span class="text-muted">See for
                     yourself.</span></h2>
-            <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how
-                this
+            <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this
                 layout would work with some actual real-world content in place.</p>
         </div>
         <div class="col-md-5 order-md-1">
