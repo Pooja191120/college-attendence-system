@@ -33,24 +33,22 @@
                         <a class="nav-link hover-line active" aria-current="page" href="">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link hover-line" href="">About Us</a>
+                        <a class="nav-link hover-line" href="#about">About Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link hover-line" href="">Contact Us</a>
+                        <a class="nav-link hover-line" href="#contact">Contact Us</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link hover-line" href="#" data-bs-toggle="modal"
                             data-bs-target="#exampleModal">Donate
                             Us</a>
                     </li>
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a class="nav-link hover-line" href="selector.html">Attendence Sheet</a>
-                    </li>
-                    <li class="nav-item">
-                        <a type="button" class=" nav-link hover-line" data-bs-toggle="modal"
-                            data-bs-target="#staticBackdrop">
-                            Sign Up
-                        </a>
+                    </li> -->
+                    <li><a href="" class="nav-link hover-line" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                            Sign In
+                        </a></li>
                     </li>
                     <li class="nav-item">
                         <a href="#myModal" class="nav-link hover-line" data-toggle="modal">Login</a>
@@ -106,57 +104,93 @@
 
     <!-- model of signup start from here -->
     <!-- sign up  -->
+    <!-- <div id="regmodal" class="modal fade" id="modalRegisterForm" tabindex="-1" role="dialog"
+        aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header text-center">
+                    <h4 class="modal-title w-100 font-weight-bold">Sign up</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body mx-3">
+                    <div class="md-form mb-5">
+                        <i class="fas fa-user prefix grey-text"></i>
+                        <input type="text" id="orangeForm-name" class="form-control validate">
+                        <label data-error="wrong" data-success="right" for="orangeForm-name">Your name</label>
+                    </div>
+                    <div class="md-form mb-5">
+                        <i class="fas fa-envelope prefix grey-text"></i>
+                        <input type="email" id="orangeForm-email" class="form-control validate">
+                        <label data-error="wrong" data-success="right" for="orangeForm-email">Your email</label>
+                    </div>
+
+                    <div class="md-form mb-4">
+                        <i class="fas fa-lock prefix grey-text"></i>
+                        <input type="password" id="orangeForm-pass" class="form-control validate">
+                        <label data-error="wrong" data-success="right" for="orangeForm-pass">Your password</label>
+                    </div>
+
+                </div>
+                <div class="modal-footer d-flex justify-content-center">
+                    <button class="btn btn-deep-orange">Sign up</button>
+                </div>
+            </div>
+        </div>
+    </div> -->
     <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-        aria-labelledby="staticBackdropLabel" aria-hidden="true" style="width: 100vw;">
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
-                <div class="modal-header">
-                    <!-- <div class="avatar">
-                    <img src="" alt="Avatar">
-                </div> -->
-                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Create An Account</h1>
+                <div class="modal-header text-center">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Sign Up</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <form>
-                        <div class="mb-3">
-                            <label for="exampleInputEmail1" class="form-label">First Name</label>
-                            <input type="text" class="form-control" id="exampleInputEmail1"
-                                aria-describedby="emailHelp">
+                    <div class="mb-3 pt-2">
+                        <label for="formGroupExampleInput" class="form-label">UserName</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput"
+                            placeholder="Enter Your UserName Here">
+                    </div>
+                    <div class="row g-3">
+                        <div class="col">
+                            <label for="formGroupExampleInput" class="form-label">First Name</label>
+                            <input type="text" class="form-control" placeholder="Enter Your First name"
+                                aria-label="First name">
                         </div>
-                        <div class="mb-3">
-                            <label for="exampleInputEmail1" class="form-label">Last Name</label>
-                            <input type="text" class="form-control" id="exampleInputEmail1"
-                                aria-describedby="emailHelp">
+                        <div class="col">
+                            <label for="formGroupExampleInput" class="form-label">Last Name</label>
+                            <input type="text" class="form-control" placeholder=" Enter Your Last name"
+                                aria-label="Last name">
                         </div>
-                        <div class="mb-3">
-                            <label for="exampleInputEmail1" class="form-label">Mobile Number</label>
-                            <input type="number" class="form-control" id="exampleInputEmail1"
-                                aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3 pt-2">
+                        <label for="formGroupExampleInput" class="form-label">Number</label>
+                        <input type="number" class="form-control" id="formGroupExampleInput"
+                            placeholder="Enter Your Mobile Number Here">
+                    </div>
+                    <div class="mb-3 pt-2">
+                        <label for="formGroupExampleInput" class="form-label">Email</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput"
+                            placeholder="Enter Your Email Here">
+                    </div>
+                    <div class="row g-3">
+                        <div class="col">
+                            <label for="formGroupExampleInput" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="formGroupExampleInput"
+                                placeholder="Enter Your Password">
                         </div>
-                        <div class="mb-3">
-                            <label for="exampleInputEmail1" class="form-label">Email address</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1"
-                                aria-describedby="emailHelp">
-                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        <div class="col">
+                            <label for="formGroupExampleInput" class="form-label">Confirm-Password</label>
+                            <input type="password" class="form-control" id="formGroupExampleInput"
+                                placeholder="Enter Your Confirm-Password">
                         </div>
-                        <div class="mb-3">
-                            <label for="exampleInputPassword1" class="form-label">Password</label>
-                            <input type="password" class="form-control" id="exampleInputPassword1">
-                            <span id="passwordHelpInline" class="form-text">
-                                Must be 8-20 characters long.
-                        </div>
-                        <div class="mb-3">
-                            <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
-                            <input type="password" class="form-control" id="exampleInputPassword1">
-                            <span id="passwordHelpInline" class="form-text">
-                                Same as Password
-                        </div>
-                    </form>
+                    </div>
                 </div>
                 <div class="modal-footer">
-                    <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"></button> -->
-                    <button type="button" class="btn btn-primary">Sign up</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Understood</button>
                 </div>
             </div>
         </div>
@@ -200,7 +234,7 @@
 
     <!-- About Us page start from here -->
     <!-- main hero of the about us page starting from here -->
-    <div class="container col-xl-10 col-xxl-8 px-4 py-5">
+    <div class="container col-xl-10 col-xxl-8 px-4 py-5" id="about">
         <div class="row align-items-center g-lg-5 py-5">
             <div class="col-lg-7 text-center text-lg-start">
                 <h1 class="display-4 fw-bold lh-1 mb-3">About Us</h1>
@@ -212,7 +246,7 @@
                 </p>
             </div>
             <div class="col-md-10 mx-auto col-lg-5">
-                <img src="team image.png" alt="" style="width: 28rem;">
+                <img src="team image.png" alt="" style="width: 100%;">
             </div>
         </div>
     </div>
@@ -220,7 +254,7 @@
 
     <!-- Title  start -->
     <div class="container d-flex justify-content-center">
-        <img src="our team.png" alt="Our Team">
+        <img src="our team.png" alt="Our Team" style="width: 100%;">
     </div>
     <!-- Title  end -->
 
@@ -323,7 +357,7 @@
 
     <!-- contact us form start from here -->
 
-    <section class="section-100">
+    <section class="section-100" id="contact">
         <div class="container">
 
             <h1 class="text-center"> <u>Contact Form</u></h1>

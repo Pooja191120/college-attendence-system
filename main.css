@@ -251,3 +251,16 @@ body {
     box-shadow: 10px 10px 32px 8px rgb(0 0 0 / 50%);
     border-radius: 16px;
 }
+
+
+/* signup page */
+.card-registration .select-input.form-control[readonly]:not([disabled]) {
+    font-size: 1rem;
+    line-height: 2.15;
+    padding-left: .75em;
+    padding-right: .75em;
+}
+
+.card-registration .select-arrow {
+    top: 13px;
+}

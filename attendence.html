@@ -28,7 +28,7 @@
     <!-- This is navbar of the website  -->
     <nav class="navbar navbar-expand-lg bg-light navbar-light">
         <div class="container-fluid container">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="index.html">
                 <img src="logo1.png" alt="" style="height: 5rem; width: 13rem;">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -54,7 +54,7 @@
                     <li class="nav-item">
                         <a class="nav-link hover-line active" href="selector.html">Attendence Sheet</a>
                     </li>
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a type="button" class=" nav-link hover-line" data-bs-toggle="modal"
                             data-bs-target="#staticBackdrop">
                             Sign Up
@@ -62,7 +62,7 @@
                     </li>
                     <li class="nav-item">
                         <a href="#myModal" class="nav-link hover-line" data-toggle="modal">Login</a>
-                    </li>
+                    </li> -->
                 </ul>
             </div>
         </div>
@@ -127,7 +127,12 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <form>
+                    <form >
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">UserName</label>
+                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                                placeholder="Enter Your UserName Here">
+                        </div>
                         <div class="mb-3">
                             <label for="exampleInputEmail1" class="form-label">First Name</label>
                             <input type="text" class="form-control" id="exampleInputEmail1"
